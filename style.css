@@ -335,7 +335,7 @@
   }
   .about-visual .leaf1{
     position:absolute; font-size:5rem; opacity:0.9;
-    top:14%; left:12%; transform:rotate(-15deg);
+    top:5%; left:5%; transform:rotate(-15deg);
   }
   .about-visual-wrap .leaf2{
     position:absolute; font-size:4rem; opacity:0.9;

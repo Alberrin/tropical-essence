@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tropical Essence · Cosmética & Cuidado Íntimo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <span class="logo-text">Tropical Essence</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#nosotros">Nosotras</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+    </ul>
+    <a class="nav-cta" href="https://www.instagram.com/tropicalessence.by/" target="_blank" rel="noopener">Seguinos ✨</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-badge">🍍 Cosmética & cuidado íntimo</span>
+      <h1>Belleza con <em>frescura</em> tropical</h1>
+      <p>Cosméticos y productos de higiene femenina pensados para tu piel y tu rutina diaria. Fórmulas suaves, aromas vivos y esa sensación de recién duchada todo el día.</p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+        <a href="https://www.instagram.com/tropicalessence.by/" target="_blank" rel="noopener" class="btn btn-secondary">📷 @tropicalessence.by</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="citrus"></div>
+      <div class="float-chip chip-1">🌿 Ingredientes suaves</div>
+      <div class="float-chip chip-2">💧 pH balanceado</div>
+    </div>
+  </div>
+  <div class="wave">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,32 C240,80 480,0 720,24 C960,48 1200,8 1440,32 L1440,70 L0,70 Z" fill="#FFF8EE"/></svg>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<section id="productos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Nuestros productos</h2>
+      <p>Explorá por categoría. Esta grilla se arma sola a partir de la lista de productos: agregá, sacá o cambiá items directamente desde el código.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="about" id="nosotros">
+  <div class="wrap about-inner">
+    <div class="about-visual-wrap">
+      <div class="about-visual">
+        <img class="bg-fill" src="verano.jpeg" alt="Tropical Essence">
+        <span class="leaf leaf1">🌴</span>
+      </div>
+      <span class="leaf leaf2">🌺</span>
+    </div>
+    <div>
+      <span class="eyebrow">Nosotras</span>
+      <h2>Rutinas simples, resultados reales</h2>
+      <p style="margin-top:14px; color:var(--plum-soft); line-height:1.6;">Tropical Essence nace para acompañar el cuidado diario con productos honestos: sin vueltas, sin ingredientes de más, con foco en lo que tu piel realmente necesita.</p>
+      <ul class="about-list">
+        <li><span class="num">1</span> Fórmulas dermatológicamente testeadas, libres de crueldad animal.</li>
+        <li><span class="num">2</span> Aromas tropicales originales, nada de fragancias genéricas.</li>
+        <li><span class="num">3</span> Envíos a todo el país y venta directa por Instagram.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="instagram" id="instagram">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Comunidad</span>
+      <h2>Seguinos en Instagram</h2>
+      <p>Novedades, lanzamientos y promos primero en @tropicalessence.by</p>
+    </div>
+    <div class="ig-grid" id="igGrid"></div>
+    
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">🌺 Tropical Essence</div>
+        <p>Cosmética y cuidado íntimo femenino con esencia tropical.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <a href="#productos">Productos</a>
+          <a href="#nosotros">Nosotras</a>
+          <a href="#instagram">Instagram</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="https://www.instagram.com/tropicalessence.by/" target="_blank" rel="noopener">@tropicalessence.by</a>
+          <p>Pedidos por Instagram DM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tropical Essence. Todos los derechos reservados.</span>
+      <span>Hecho con 🌸 para pieles reales.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   👉 EDITÁ TUS PRODUCTOS ACÁ ABAJO 👈
+   ============================================================
+   Cada producto es un objeto con estos campos:
+
+   id        -> identificador único (texto, sin espacios)
+   name      -> nombre del producto
+   category  -> "Cosmética" | "Higiene íntima" | "Fragancias" | "Cuidado corporal"
+                (podés crear categorías nuevas, los filtros se arman solos)
+   price     -> precio a mostrar, como texto. Ej: "$8.500"
+   description -> descripción corta (1-2 líneas)
+   icon      -> un emoji que se muestra si no cargás foto (ej: "🧴")
+   image     -> (opcional) URL de una foto real del producto.
+                Si la dejás en null, se muestra el emoji sobre fondo degradé.
+   badge     -> (opcional) etiqueta chica arriba de la imagen. Ej: "Nuevo",
+                "Más vendido", "Edición limitada". Dejar "" si no querés ninguna.
+
+   Para agregar un producto nuevo, copiá un bloque { ... } completo,
+   pegalo antes del ], cambiale el id y completá los datos.
+   ============================================================ */
+
+const PRODUCTS = [
+  {
+    id: "gel-intimo-coco",
+    name: "Gel íntimo de coco y aloe",
+    category: "Higiene íntima",
+    price: "$6.200",
+    description: "pH balanceado, fórmula suave para uso diario con aloe vera calmante.",
+    icon: "🥥",
+    image: null,
+    badge: "Más vendido"
+  },
+  {
+    id: "toallitas-mango",
+    name: "Toallitas íntimas de mango",
+    category: "Higiene íntima",
+    price: "$3.100",
+    description: "Pack x20, hipoalergénicas, ideales para llevar en la cartera.",
+    icon: "🧻",
+    image: null,
+    badge: ""
+  },
+  {
+    id: "bruma-corporal-hibisco",
+    name: "Bruma corporal de hibisco",
+    category: "Fragancias",
+    price: "$7.800",
+    description: "Spray corporal liviano con notas florales y un toque cítrico.",
+    icon: "🌺",
+    image: null,
+    badge: "Nuevo"
+  },
+  {
+    id: "labial-oil-guayaba",
+    name: "Lip oil de guayaba",
+    category: "Cosmética",
+    price: "$5.400",
+    description: "Brillo labial nutritivo con color sutil y aroma frutal.",
+    icon: "💋",
+    image: null,
+    badge: ""
+  },
+  {
+    id: "exfoliante-pina",
+    name: "Exfoliante corporal de piña",
+    category: "Cuidado corporal",
+    price: "$9.500",
+    description: "Textura en crema con partículas suaves, deja la piel renovada.",
+    icon: "🍍",
+    image: null,
+    badge: ""
+  },
+  {
+    id: "serum-facial-maracuya",
+    name: "Sérum facial de maracuyá",
+    category: "Cosmética",
+    price: "$11.900",
+    description: "Antioxidante, con vitamina C natural para piel luminosa.",
+    icon: "✨",
+    image: null,
+    badge: "Edición limitada"
+  },
+  {
+    id: "jabon-intimo-sandia",
+    name: "Jabón íntimo en barra de sandía",
+    category: "Higiene íntima",
+    price: "$4.300",
+    description: "Sin sulfatos, formulado especialmente para la zona íntima.",
+    icon: "🍉",
+    image: null,
+    badge: ""
+  },
+  {
+    id: "crema-manos-banana",
+    name: "Crema de manos de banana",
+    category: "Cuidado corporal",
+    price: "$3.800",
+    description: "Hidratación profunda de absorción rápida, sin dejar residuo graso.",
+    icon: "🍌",
+    image: null,
+    badge: ""
+  },
+  {
+    id: "perfume-flor-tiare",
+    name: "Perfume flor de tiaré",
+    category: "Fragancias",
+    price: "$13.500",
+    description: "Fragancia envolvente inspirada en las playas del Pacífico Sur.",
+    icon: "🌸",
+    image: null,
+    badge: "Nuevo"
+  }
+];
+
+/* ============================================================
+   No hace falta tocar nada de acá para abajo, esto solo arma
+   la página en base a la lista PRODUCTS de arriba.
+   ============================================================ */
+
+const grid = document.getElementById('productGrid');
+const filtersEl = document.getElementById('filters');
+const igUrl = "https://www.instagram.com/tropicalessence.by/";
+
+function renderProducts(filter){
+  grid.innerHTML = '';
+  const list = filter === 'Todos' ? PRODUCTS : PRODUCTS.filter(p => p.category === filter);
+  list.forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.transitionDelay = (i * 40) + 'ms';
+    card.innerHTML = `
+      <div class="card-media">
+        ${p.badge ? `<span class="card-badge">${p.badge}</span>` : ''}
+        ${p.image ? `<img src="${p.image}" alt="${p.name}">` : p.icon}
+      </div>
+      <div class="card-body">
+        <span class="card-cat">${p.category}</span>
+        <h3>${p.name}</h3>
+        <p>${p.description}</p>
+        <div class="card-footer">
+          <span class="price">${p.price}</span>
+          <a class="ig-btn" href="${igUrl}" target="_blank" rel="noopener">Pedir →</a>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.card').forEach(c => c.classList.add('reveal'));
+    });
+  });
+}
+
+function renderFilters(){
+  const categories = ['Todos', ...new Set(PRODUCTS.map(p => p.category))];
+  filtersEl.innerHTML = '';
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (cat === 'Todos' ? ' active' : '');
+    btn.textContent = cat;
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderProducts(cat);
+    });
+    filtersEl.appendChild(btn);
+  });
+}
+
+renderFilters();
+renderProducts('Todos');
+
+/* Marquesina con nombres de productos */
+const marqueeTrack = document.getElementById('marqueeTrack');
+const marqueeItems = PRODUCTS.map(p => `<span>🌺 ${p.name}</span>`).join('');
+marqueeTrack.innerHTML = marqueeItems + marqueeItems;
+
+/* ============================================================
+   👉 EDITÁ LOS POSTS DE INSTAGRAM ACÁ 👈
+   ============================================================
+   Cada post es un objeto con estos campos:
+
+   image   -> nombre o URL del archivo de foto. Si no tenés
+              todavía, dejalo en null y se muestra un emoji
+              de relleno en su lugar.
+   icon    -> emoji de relleno, se usa solo si image es null.
+   link    -> (opcional) a qué URL va si lo clickeás.
+              Si lo dejás vacío (""), usa tu perfil de Instagram.
+
+   Para agregar una foto real: subí el archivo a la misma
+   carpeta que index.html, y poné su nombre en "image".
+   Ej: image: "post-labial.jpg"
+   ============================================================ */
+
+const POSTS = [
+  { image: "post1.png", icon: "🌺", link: "https://www.instagram.com/p/DZH-01NqCqH/" },
+  { image: null, icon: "🍍", link: "" },
+  { image: null, icon: "💧", link: "" },
+];
+
+/* Grilla de Instagram, armada a partir de POSTS */
+const igGrid = document.getElementById('igGrid');
+POSTS.forEach(post => {
+  const cell = document.createElement('a');
+  cell.className = 'ig-cell';
+  cell.href = post.link || igUrl;
+  cell.target = '_blank';
+  cell.rel = 'noopener';
+  if (post.image) {
+    cell.innerHTML = `<img src="${post.image}" alt="Post de Tropical Essence">`;
+  } else {
+    cell.textContent = post.icon;
+  }
+  igGrid.appendChild(cell);
+});
+
+/* Menú mobile */
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
+</html>
